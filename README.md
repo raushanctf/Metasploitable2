@@ -51,20 +51,20 @@ This report will be assessed according to its accuracy and comprehensiveness reg
   Unveiling Usernames: SMTP Enumeration with Metasploit’s smtp_enum Module: HIGH
 
 
-1. { Service Enumeration }
+# { Service Enumeration }
   Testing Objective: Risk Rating
   Service Enumeration Low / Medium / High
   Tools Used: Nmap
   Vulnerability: Service Enumeration via Open Ports
 
-  Vulnerability Description:
-  Service enumeration is a method used to identify the services running on specific ports of a target 
-  system and determine their versions. This version information is crucial because it allows attackers 
-  to search for known security vulnerabilities associated with the identified software versions. 
-  During service enumeration on Metasploitable2, we observe that the application has many open 
-  ports, each revealing the service name and its version. An attacker can use this information to 
-  search for available exploits on the internet or in hacking payload databases. These exploits can 
-  then be used to compromise the system.
+  * Vulnerability Description:
+    Service enumeration is a method used to identify the services running on specific ports of a target 
+    system and determine their versions. This version information is crucial because it allows attackers 
+    to search for known security vulnerabilities associated with the identified software versions. 
+    During service enumeration on Metasploitable2, we observe that the application has many open 
+    ports, each revealing the service name and its version. An attacker can use this information to 
+    search for available exploits on the internet or in hacking payload databases. These exploits can 
+    then be used to compromise the system.
   
   Open Ports
   21, 22, 23, 25, 53, 80, 111, 139, 445, 512, 513, 514, 1099, 1524, 2121,3306, 3632, 5900, 6000, 
@@ -87,7 +87,7 @@ This report will be assessed according to its accuracy and comprehensiveness reg
      
   ![service enumeration](https://github.com/user-attachments/assets/698edfcc-257a-48af-87b7-abdba489ce92)
 
-2. { Exposure of Sensitive Information to an Unauthorized Actor}
+# { Exposure of Sensitive Information to an Unauthorized Actor}
   Testing Objective: Risk Rating
   Credential Exposure Through Telnet 
   Banner Disclosure: Low / Medium / High
@@ -119,7 +119,7 @@ This report will be assessed according to its accuracy and comprehensiveness reg
 
   ![credential exposure1](https://github.com/user-attachments/assets/e67f343d-4f01-4d41-ad16-e89ec0fa1e15)
 
-3. { Improper Restriction of Excessive Authentication Attempts}
+# { Improper Restriction of Excessive Authentication Attempts}
   Testing Objective: Risk Rating
   Exploiting FTP (Anonymous Access) Low / Medium / High
   Tools Used: Nmap
@@ -147,7 +147,7 @@ This report will be assessed according to its accuracy and comprehensiveness reg
 
 ![anonymous 1](https://github.com/user-attachments/assets/b3495b2e-30ec-4f3e-b663-2dcf75352850)
 
-4. { Samba smbd 3.x Remote Code Execution }
+# { Samba smbd 3.x Remote Code Execution }
   Testing Objective: Risk Rating
   Samba smbd 3.x Remote Code Execution Low / Medium / High
   Tools Used: Metasploit
@@ -182,7 +182,7 @@ This report will be assessed according to its accuracy and comprehensiveness reg
 ![remotecode2](https://github.com/user-attachments/assets/7a6965ae-2707-4d37-81be-2cb7ff446e91)
 
 
-5. { Exploiting smtp enumeration }
+# { Exploiting smtp enumeration }
   Testing Objective: Risk Rating
   SMTP Enumeration: Low / Medium / High
   Tools Used: Metasploit
