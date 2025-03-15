@@ -61,20 +61,20 @@ This report will be assessed according to its accuracy and comprehensiveness reg
     Service enumeration is a method used to identify the services running on specific ports of a target 
     system and determine their versions. This version information is crucial because it allows attackers 
     to search for known security vulnerabilities associated with the identified software versions. 
-    During service enumeration on Metasploitable2, we observe that the application has many open 
+    During service enumeration on Metasploitable2, we observed that the application has many open 
     ports, each revealing the service name and its version. An attacker can use this information to 
     search for available exploits on the internet or in hacking payload databases. These exploits can 
     then be used to compromise the system.
   
-  Open Ports
-  21, 22, 23, 25, 53, 80, 111, 139, 445, 512, 513, 514, 1099, 1524, 2121,3306, 3632, 5900, 6000, 
-  6667, 6697, 8009, 36979, 40940, 51217, 51247
+  * Open Ports
+    21, 22, 23, 25, 53, 80, 111, 139, 445, 512, 513, 514, 1099, 1524, 2121,3306, 3632, 5900, 6000, 
+    6667, 6697, 8009, 36979, 40940, 51217, 51247
   
-  Technical Impact:
-  Identification of Vulnerabilities: Attackers can map running services, detect outdated versions, and exploit 
-  known CVEs (Common Vulnerabilities and Exposures).
-  Unauthorized Access: Weak or misconfigured services (e.g., open SSH, FTP, or RDP) can be exploited to 
-  gain unauthorized access.
+  * Technical Impact:
+    $ Identification of Vulnerabilities: Attackers can map running services, detect outdated versions, and exploit 
+      known CVEs (Common Vulnerabilities and Exposures).
+    $ Unauthorized Access: Weak or misconfigured services (e.g., open SSH, FTP, or RDP) can be exploited to 
+      gain unauthorized access.
   
   Privilege Escalation: Enumerated services may have misconfigured permissions or weak 
   authentication, allowing attackers to escalate privileges.
