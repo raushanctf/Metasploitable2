@@ -87,59 +87,60 @@ This report will be assessed according to its accuracy and comprehensiveness reg
   ![service enumeration](https://github.com/user-attachments/assets/698edfcc-257a-48af-87b7-abdba489ce92)
 
 # { Exposure of Sensitive Information to an Unauthorized Actor}
-  Testing Objective: Risk Rating
-  Credential Exposure Through Telnet 
-  Banner Disclosure: Low / Medium / High
-  Tools Used: Nmap, Kali Linux
-  Vulnerability:
-  Telnet banners may reveal sensitive information, such as usernames, system details, or even 
-  credentials, during the initial connection.
+* Testing Objective: Risk Rating
+* Credential Exposure Through Telnet
+* Banner Disclosure: Low / Medium / High
+* Tools Used: Nmap, Kali Linux
+    
+* Vulnerability: Telnet banners may reveal sensitive information, such as usernames, system details, or even 
+   credentials, during the initial connection.
 
-  Vulnerability Description:
+* Vulnerability Description:
   Telnet services configured with default or weak credentials pose a serious security risk. Attackers 
   can easily access systems using publicly known default usernames and passwords, leading to 
   unauthorized entry and potential system compromise.
   
-  Open Ports: 23
-  Technical Impact:
-  Unauthorized System Access – Full control over the target system.
-  Data Breach – Exposure of sensitive information.
-  Lateral Movement – Access to internal networks and additional systems.
+* Open Ports: 23
+
+* Technical Impact:
+  * Unauthorized System Access – Full control over the target system.
+  * Data Breach – Exposure of sensitive information.
+  * Lateral Movement – Access to internal networks and additional systems.
   
-  Mitigation Strategies
-  Disable Telnet and use SSH instead.
-  Change Default Credentials immediately after setup.
-  Use Network Firewalls to block unauthorized Telnet access.
-  Monitor Logs & Traffic for suspicious login attempts.
+* Mitigation Strategies
+  * Disable Telnet and use SSH instead.
+  * Change Default Credentials immediately after setup.
+  * Use Network Firewalls to block unauthorized Telnet access.
+  * Monitor Logs & Traffic for suspicious login attempts.
   
-  Step of Reproduce 
-  1. let's begin first Run the command in the terminal: telnet <target_ip>
+* Step of Reproduce 
+  * let's begin first Run the command in the terminal: telnet <target_ip>
   ![credential Exposure](https://github.com/user-attachments/assets/067b526a-3ec4-4a5d-9c98-2f472e94cf90)
 
   ![credential exposure1](https://github.com/user-attachments/assets/e67f343d-4f01-4d41-ad16-e89ec0fa1e15)
 
 # { Improper Restriction of Excessive Authentication Attempts}
-  Testing Objective: Risk Rating
-  Exploiting FTP (Anonymous Access) Low / Medium / High
-  Tools Used: Nmap
-  Vulnerability: vsftpd 2.3.4 - Backdoor Command Execution
+* Testing Objective: Risk Rating
+* Exploiting FTP (Anonymous Access) Low / Medium / High
+* Tools Used: Nmap
+* Vulnerability: vsftpd 2.3.4 - Backdoor Command Execution
 
-  Vulnerability Description:
+* Vulnerability Description:
   vsFTPd (Very Secure FTP Daemon) version 2.3.4 contains a backdoor that allows an attacker to 
   gain a root shell by sending a specially crafted payload during the FTP login process. This 
   vulnerability was introduced by a malicious backdoor in the source code.
   
-  Open Ports: 21
+* Open Ports: 21
   
-  Technical Impact:
-  Unauthenticated Remote Code Execution (RCE) – Attackers can execute arbitrary commands as root.
-  Full System Compromise – Since vsFTPd runs with elevated privileges, attackers gain full control.
-  Creation of Persistent Backdoors – Attackers can deploy malware, modify configurations, and escalate 
-  attacks.
+* Technical Impact:
+  * Unauthenticated Remote Code Execution (RCE) – Attackers can execute arbitrary commands as root.
+  * Full System Compromise – Since vsFTPd runs with elevated privileges, attackers gain full control.
+  * Creation of Persistent Backdoors – Attackers can deploy malware, modify configurations, and escalate 
+    attacks.
   
-  Anonymous Login: Yes
+* Anonymous Login: Yes
   
-  Step to reproduce
+* Step to reproduce
 
 
 ![anonymous](https://github.com/user-attachments/assets/d269e0ae-ccb9-407c-a5be-cfd630663e92)
@@ -147,34 +148,34 @@ This report will be assessed according to its accuracy and comprehensiveness reg
 ![anonymous 1](https://github.com/user-attachments/assets/b3495b2e-30ec-4f3e-b663-2dcf75352850)
 
 # { Samba smbd 3.x Remote Code Execution }
-  Testing Objective: Risk Rating
-  Samba smbd 3.x Remote Code Execution Low / Medium / High
-  Tools Used: Metasploit
+* Testing Objective: Risk Rating
+* Samba smbd 3.x Remote Code Execution Low / Medium / High
+* Tools Used: Metasploit
 
-  Vulnerability:
+* Vulnerability:
   Samba versions 3.0.0 to 3.0.25rc3 contain a remote code execution (RCE) vulnerability due to a 
   flaw in the handling of MS-RPC requests.
   
-  Vulnerability Description:
+* Vulnerability Description:
   Samba versions 3.0.0 to 3.0.25rc3 contain a command injection vulnerability in the username 
   map script functionality. This allows remote attackers to execute arbitrary commands as root by 
   sending a specially crafted "username" parameter during authentication.
   
-  Open Ports: 139
+* Open Ports: 139
   
-  Technical Impact:
-  Remote Code Execution (RCE) – Full system compromise.
-  Privilege Escalation – Attackers gain root access.
-  Lateral Movement – Attackers can pivot inside the network.
-  Data Exfiltration – Sensitive files and credentials can be stolen.
+* Technical Impact:
+  * Remote Code Execution (RCE) – Full system compromise.
+  * Privilege Escalation – Attackers gain root access.
+  * Lateral Movement – Attackers can pivot inside the network.
+  * Data Exfiltration – Sensitive files and credentials can be stolen.
   
-  Mitigation:
-  Upgrade Samba – Ensure you are running a patched version (3.0.25+).
-  Disable the "username map script" in the Samba configuration file (smb.conf).
-  Restrict SMB Ports (137, 138, 139, 445) using a firewall.
-  Implement Strong Authentication – Disable anonymous access.
+* Mitigation:
+  * Upgrade Samba – Ensure you are running a patched version (3.0.25+).
+  * Disable the "username map script" in the Samba configuration file (smb.conf).
+  * Restrict SMB Ports (137, 138, 139, 445) using a firewall.
+  * Implement Strong Authentication – Disable anonymous access.
   
-  Step to Reproduce
+* Step to Reproduce
 ![remote code](https://github.com/user-attachments/assets/cddb5961-e0f6-48dd-a74a-78c005642c8b)
 
 ![remotecode1](https://github.com/user-attachments/assets/163b1328-539e-40a8-b493-96f7a037a8f8)
@@ -182,40 +183,39 @@ This report will be assessed according to its accuracy and comprehensiveness reg
 
 
 # { Exploiting smtp enumeration }
-  Testing Objective: Risk Rating
-  SMTP Enumeration: Low / Medium / High
-  Tools Used: Metasploit
+* Testing Objective: Risk Rating
+* SMTP Enumeration: Low / Medium / High
+* Tools Used: Metasploit
 
-  Vulnerability:
-  Unveiling Usernames: SMTP Enumeration with Metasploit’s smtp_enum Module.
+* Vulnerability: Unveiling Usernames: SMTP Enumeration with Metasploit’s smtp_enum Module.
   
-  Vulnerability Description:
-  Telnet services configured with default or weak credentials pose a serious security risk. Attackers 
-  can easily access systems using publicly known default usernames and passwords, leading to 
-  unauthorized entry and potential system compromise.
+* Vulnerability Description:
+  * Telnet services configured with default or weak credentials pose a serious security risk. Attackers 
+    can easily access systems using publicly known default usernames and passwords, leading to 
+    unauthorized entry and potential system compromise.
   
-  Open Ports: 25
+* Open Ports: 25
   
-  Technical Impact:
-  User Enumeration – Attackers can identify valid usernames for brute-force attacks.
-  Phishing & Social Engineering – Leaked email addresses aid in targeted attacks.
-  Credential Stuffing – Discovered usernames may be used in password attacks.
-  Privilege Escalation – Attackers can map user roles and privilege levels.
+* Technical Impact:
+  * User Enumeration – Attackers can identify valid usernames for brute-force attacks.
+  * Phishing & Social Engineering – Leaked email addresses aid in targeted attacks.
+  * Credential Stuffing – Discovered usernames may be used in password attacks.
+  * Privilege Escalation – Attackers can map user roles and privilege levels.
   
-  Mitigation Strategies:
-  Disable VRFY & EXPN Commands – Prevents direct user enumeration.
-  Enforce Authentication (SMTP AUTH) – Requires valid credentials for interaction.
+* Mitigation Strategies:
+  * Disable VRFY & EXPN Commands – Prevents direct user enumeration.
+  * Enforce Authentication (SMTP AUTH) – Requires valid credentials for interaction.
   
-  Step to reproduce
+* Step to reproduce
 
 ![smtp](https://github.com/user-attachments/assets/04eb3778-add9-4b80-bdaf-70ced5c9affa)
 ![smtp1](https://github.com/user-attachments/assets/614eec83-0b17-41fb-b7da-cda716addf09)
 ![smtp3](https://github.com/user-attachments/assets/cd603c51-645e-4ed0-a523-27a9b770f378)
 
 
-CONCLUSION 
-This report highlights testing critical security flaws in metasploitable2 that attackers can leverage to gain unauthorized access. 
-these assessments provided insights into real-world attack scenarios, allowing for an in-depth understanding of how adversaries can gain unauthorized access, 
-escalate privileges, and execute remote code.
+# CONCLUSION 
+* This report highlights testing critical security flaws in metasploitable2 that attackers can leverage to gain unauthorized access. 
+  these assessments provided insights into real-world attack scenarios, allowing for an in-depth understanding of how adversaries can gain unauthorized access, 
+  escalate privileges, and execute remote code.
 
 
