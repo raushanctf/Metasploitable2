@@ -52,10 +52,10 @@ This report will be assessed according to its accuracy and comprehensiveness reg
 
 
 # { Service Enumeration }
-  @ Testing Objective: Risk Rating
-  @ Service Enumeration Low / Medium / High
-  @ Tools Used: Nmap
-  @ Vulnerability: Service Enumeration via Open Ports
+  * Testing Objective: Risk Rating
+  * Service Enumeration Low / Medium / High
+  * Tools Used: Nmap
+  * Vulnerability: Service Enumeration via Open Ports
 
   * Vulnerability Description:
     Service enumeration is a method used to identify the services running on specific ports of a target 
@@ -71,9 +71,9 @@ This report will be assessed according to its accuracy and comprehensiveness reg
     6667, 6697, 8009, 36979, 40940, 51217, 51247
   
   * Technical Impact:
-    $ Identification of Vulnerabilities: Attackers can map running services, detect outdated versions, and exploit 
+    * Identification of Vulnerabilities: Attackers can map running services, detect outdated versions, and exploit 
       known CVEs (Common Vulnerabilities and Exposures).
-    $ Unauthorized Access: Weak or misconfigured services (e.g., open SSH, FTP, or RDP) can be exploited to 
+    * Unauthorized Access: Weak or misconfigured services (e.g., open SSH, FTP, or RDP) can be exploited to 
       gain unauthorized access.
   
   Privilege Escalation: Enumerated services may have misconfigured permissions or weak 
