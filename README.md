@@ -53,7 +53,7 @@ This report will be assessed according to its accuracy and comprehensiveness reg
 
 # { Service Enumeration }
   * Testing Objective: Risk Rating
-  * Service Enumeration Low / Medium / High
+  * Service Enumeration: Low / Medium / High
   * Tools Used: Nmap
   * Vulnerability: Service Enumeration via Open Ports
 
@@ -76,14 +76,13 @@ This report will be assessed according to its accuracy and comprehensiveness reg
     * Unauthorized Access: Weak or misconfigured services (e.g., open SSH, FTP, or RDP) can be exploited to 
       gain unauthorized access.
   
-  Privilege Escalation: Enumerated services may have misconfigured permissions or weak 
-  authentication, allowing attackers to escalate privileges.
+  * Privilege Escalation: Enumerated services may have misconfigured permissions or weak 
+    authentication, allowing attackers to escalate privileges.
   
-  References
-  https://hackerone.com/reports/2210038
+  * References: https://hackerone.com/reports/2210038
   
-  Step of Reproduce 
-  1. let's begin first Running the command in the terminal: nmap -sV 192.168.219.132
+  # Step of Reproduce 
+  * let's begin first Running the command in the terminal: nmap -sV 192.168.219.132
      
   ![service enumeration](https://github.com/user-attachments/assets/698edfcc-257a-48af-87b7-abdba489ce92)
 
