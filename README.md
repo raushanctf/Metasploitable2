@@ -3,12 +3,12 @@
 This report will be assessed according to its accuracy and comprehensiveness regarding every face of the test. This report's goal is to confirm that the applicant possesses the technical know-how and through understanding of penetration testing methodologies necessary to meet the requirements.
 
 
-Introduction
+# Introduction:
   This report will be assessed for its accuracy and completeness across all aspects of the test. Its 
   objective is to verify that the applicant has the technical expertise and comprehensive 
   understanding of penetration testing methodologies required to meet the specified criteria.
 
-2. Objective
+# Objective: 
   The objective of this assessment is to perform an internal network penetration test on the 
   specified Personal network. The task requires following a comprehensive and systematic approach 
   to achieve the desired outcomes. This test aims to simulate a real-world penetration test within the 
@@ -16,7 +16,7 @@ Introduction
   finish, including the identification and exploitation of vulnerabilities, as well as the creation of a 
   detailed report.
 
-1. Requirements
+ # Requirements
   The tester is required to complete a comprehensive penetration testing report, which should 
   include the following sections:
   • Executive Summary and Recommendations: A non-technical overview summarizing key 
@@ -28,7 +28,7 @@ Introduction
   • Additional Observations: Any other relevant information not covered in the previous 
   sections.
 
-3. Project Scope
+#  Project Scope
   This section defines the scope and boundaries of the project.
   Project Name: Metasploitable2
 
@@ -41,14 +41,14 @@ Introduction
   Credentials: NA
   Test Scope: Black Box Penetration Test
 
-3. Summary
-Outlined is a Black Box Application Security assessment for the metasploitable2.
-Finding Finding ID Severity
-Service Enumeration via Open Ports:  Medium
-Credential Exposure Through Telnet Banner Disclosure: HIGH
-Exploiting FTP (Anonymous Access):  HIGH
-Samba smbd 3.x Remote Code Execution: HIGH
-Unveiling Usernames: SMTP Enumeration with Metasploit’s smtp_enum Module: HIGH
+# Summary
+  Outlined is a Black Box Application Security assessment for the metasploitable2.
+  Finding Finding ID Severity
+  Service Enumeration via Open Ports:  Medium
+  Credential Exposure Through Telnet Banner Disclosure: HIGH
+  Exploiting FTP (Anonymous Access):  HIGH
+  Samba smbd 3.x Remote Code Execution: HIGH
+  Unveiling Usernames: SMTP Enumeration with Metasploit’s smtp_enum Module: HIGH
 
 
 1. { Service Enumeration }
