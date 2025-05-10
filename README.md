@@ -1,14 +1,14 @@
-🕹️ Metasploitable2
+# 🕹️ Metasploitable2
 
-👉This report will be assessed according to its accuracy and comprehensiveness regarding every aspect of the test. Its goal is to confirm that the applicant possesses the technical know-how and understanding of penetration testing methodologies necessary to meet the requirements.
+# 👉This report will be assessed according to its accuracy and comprehensiveness regarding every aspect of the test. Its goal is to confirm that the applicant possesses the technical know-how and understanding of penetration testing methodologies necessary to meet the requirements.
 
 
- 📌Introduction:
+ # 📌Introduction:
   This report will be assessed for its accuracy and completeness across all aspects of the test. Its 
   The objective is to verify that the applicant has the technical expertise and comprehensive 
   An understanding of penetration testing methodologies is required to meet the specified criteria.
 
-🎯 Objective: 
+# 🎯Objective: 
   This assessment aims to perform an internal network penetration test on the 
   specified Personal network. The task requires a comprehensive and systematic approach 
   to achieve the desired outcomes. This test aims to simulate a real-world penetration test within the 
@@ -16,7 +16,7 @@
   finish, including the identification and exploitation of vulnerabilities, as well as the creation of a 
   detailed report.
 
- # Requirements
+ # 💊Requirements
   The tester is required to complete a comprehensive penetration testing report, which should 
   include the following sections:
   • Executive Summary and Recommendations: A non-technical overview summarizing key 
@@ -28,11 +28,11 @@
   • Additional Observations: Any other relevant information not covered in the previous 
   sections.
 
-#  Project Scope
+# 📌Project Scope
   This section defines the scope and boundaries of the project.
   Project Name: Metasploitable2
 
-  Description: Metasploitable2 is a deliberately vulnerable virtual machine (VM) 
+* Description: Metasploitable2 is a deliberately vulnerable virtual machine (VM) 
   designed for penetration testing, training, and security research. It is 
   widely utilized by cybersecurity professionals, students, and enthusiasts 
   to simulate real-world attack scenarios within a controlled environment.
@@ -41,7 +41,7 @@
   Credentials: NA
   Test Scope: Black Box Penetration Test
 
-# Summary
+# 🛠️Summary
   Outlined is a Black Box Application Security assessment for the Metasploitable2.
   Finding ID Severity
   Service Enumeration via Open Ports:  Medium
@@ -51,7 +51,7 @@
   Unveiling Usernames: SMTP Enumeration with Metasploit’s smtp_enum Module: HIGH
 
 
-# { Service Enumeration }
+# 🎯 { Service Enumeration }
   * Testing Objective: Risk Rating
   * Service Enumeration: Low / Medium / High
   * Tools Used: Nmap
@@ -86,14 +86,14 @@
      
   ![service enumeration](https://github.com/user-attachments/assets/698edfcc-257a-48af-87b7-abdba489ce92)
 
-# { Exposure of Sensitive Information to an Unauthorized Actor}
+# 🎯 { Exposure of Sensitive Information to an Unauthorized Actor}
 * Testing Objective: Risk Rating
 * Credential Exposure Through Telnet
 * Banner Disclosure: Low / Medium / High
 * Tools Used: Nmap, Kali Linux
     
 * Vulnerability: Telnet banners may reveal sensitive information, such as usernames, system details, or even 
-   credentials, during the initial connection.
+   credentials during the initial connection.
 
 * Vulnerability Description:
   Telnet services configured with default or weak credentials pose a serious security risk. Attackers 
@@ -109,17 +109,17 @@
   
 * Mitigation Strategies
   * Disable Telnet and use SSH instead.
-  * Change Default Credentials immediately after setup.
+  * Change the Default Credentials immediately after setup.
   * Use Network Firewalls to block unauthorized Telnet access.
   * Monitor Logs & Traffic for suspicious login attempts.
   
 * Step of Reproduce 
-  * let's begin first Run the command in the terminal: telnet <target_ip>
+  * Let's begin First run the command in the terminal: telnet <target_ip>
   ![credential Exposure](https://github.com/user-attachments/assets/067b526a-3ec4-4a5d-9c98-2f472e94cf90)
 
   ![credential exposure1](https://github.com/user-attachments/assets/e67f343d-4f01-4d41-ad16-e89ec0fa1e15)
 
-# { Improper Restriction of Excessive Authentication Attempts}
+# 🎯 { Improper Restriction of Excessive Authentication Attempts}
 * Testing Objective: Risk Rating
 * Exploiting FTP (Anonymous Access) Low / Medium / High
 * Tools Used: Nmap
@@ -147,7 +147,7 @@
 
 ![anonymous 1](https://github.com/user-attachments/assets/b3495b2e-30ec-4f3e-b663-2dcf75352850)
 
-# { Samba smbd 3.x Remote Code Execution }
+# 🎯 { Samba smbd 3.x Remote Code Execution }
 * Testing Objective: Risk Rating
 * Samba smbd 3.x Remote Code Execution Low / Medium / High
 * Tools Used: Metasploit
@@ -182,7 +182,7 @@
 ![remotecode2](https://github.com/user-attachments/assets/7a6965ae-2707-4d37-81be-2cb7ff446e91)
 
 
-# { Exploiting smtp enumeration }
+# 🎯{ Exploiting SMTP enumeration }
 * Testing Objective: Risk Rating
 * SMTP Enumeration: Low / Medium / High
 * Tools Used: Metasploit
@@ -213,9 +213,9 @@
 ![smtp3](https://github.com/user-attachments/assets/cd603c51-645e-4ed0-a523-27a9b770f378)
 
 
-# CONCLUSION 
-* This report highlights testing critical security flaws in metasploitable2 that attackers can leverage to gain unauthorized access. 
-  these assessments provided insights into real-world attack scenarios, allowing for an in-depth understanding of how adversaries can gain unauthorized access, 
+# 🧁 CONCLUSION 
+* This report highlights testing critical security flaws in Metasploitable2 that attackers can leverage to gain unauthorized access. 
+  These assessments provided insights into real-world attack scenarios, allowing for an in-depth understanding of how adversaries can gain unauthorized access, 
   escalate privileges, and execute remote code.
 
 
