@@ -81,7 +81,7 @@
   
   * References: https://hackerone.com/reports/2210038
   
-  # Step to Reproduce 
+  # 🎉Step to Reproduce 
   * Let's begin first running the command in the terminal: nmap -sV 192.168.219.132
      
   ![service enumeration](https://github.com/user-attachments/assets/698edfcc-257a-48af-87b7-abdba489ce92)
@@ -113,8 +113,8 @@
   * Use Network Firewalls to block unauthorized Telnet access.
   * Monitor Logs & Traffic for suspicious login attempts.
   
-* Step of Reproduce 
-  * Let's begin First run the command in the terminal: telnet <target_ip>
+# 🎉Step to Reproduce 
+  * Let's begin. First, run the command in the terminal: telnet <target_ip>
   ![credential Exposure](https://github.com/user-attachments/assets/067b526a-3ec4-4a5d-9c98-2f472e94cf90)
 
   ![credential exposure1](https://github.com/user-attachments/assets/e67f343d-4f01-4d41-ad16-e89ec0fa1e15)
@@ -140,7 +140,7 @@
   
 * Anonymous Login: Yes
   
-* Step to reproduce
+# 🎉Step to reproduce
 
 
 ![anonymous](https://github.com/user-attachments/assets/d269e0ae-ccb9-407c-a5be-cfd630663e92)
@@ -175,7 +175,7 @@
   * Restrict SMB Ports (137, 138, 139, 445) using a firewall.
   * Implement Strong Authentication – Disable anonymous access.
   
-* 🎉Step to Reproduce
+# 🎉Step to Reproduce
 ![remote code](https://github.com/user-attachments/assets/cddb5961-e0f6-48dd-a74a-78c005642c8b)
 
 ![remotecode1](https://github.com/user-attachments/assets/163b1328-539e-40a8-b493-96f7a037a8f8)
@@ -206,7 +206,7 @@
   * Disable VRFY & EXPN Commands – Prevents direct user enumeration.
   * Enforce Authentication (SMTP AUTH) – Requires valid credentials for interaction.
   
-* Step to reproduce
+ # 🎉Step to reproduce
 
 ![smtp](https://github.com/user-attachments/assets/04eb3778-add9-4b80-bdaf-70ced5c9affa)
 ![smtp1](https://github.com/user-attachments/assets/614eec83-0b17-41fb-b7da-cda716addf09)
@@ -215,7 +215,7 @@
 
 # 🧁 CONCLUSION 
 * This report highlights testing critical security flaws in Metasploitable2 that attackers can leverage to gain unauthorized access. 
-  These assessments provided insights into real-world attack scenarios, allowing for an in-depth understanding of how adversaries can gain unauthorized access, 
+  These assessments provided insights into real-world attack scenarios, allowing for an in-depth understanding of how adversaries can gain unauthorized access. 
   escalate privileges, and execute remote code.
 
 
