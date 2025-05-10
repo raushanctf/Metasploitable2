@@ -1,6 +1,6 @@
 # 🕹️ Metasploitable2
 
-#👉This report will be assessed according to its accuracy and comprehensiveness regarding every aspect of the test. Its goal is to confirm that the applicant possesses the technical know-how and understanding of penetration testing methodologies necessary to meet the requirements.
+👉This report will be assessed according to its accuracy and comprehensiveness regarding every aspect of the test. Its goal is to confirm that the applicant possesses the technical know-how and understanding of penetration testing methodologies necessary to meet the requirements.
 
 
  # 📌Introduction:
@@ -175,7 +175,7 @@
   * Restrict SMB Ports (137, 138, 139, 445) using a firewall.
   * Implement Strong Authentication – Disable anonymous access.
   
-* Step to Reproduce
+* 🎉Step to Reproduce
 ![remote code](https://github.com/user-attachments/assets/cddb5961-e0f6-48dd-a74a-78c005642c8b)
 
 ![remotecode1](https://github.com/user-attachments/assets/163b1328-539e-40a8-b493-96f7a037a8f8)
