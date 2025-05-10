@@ -1,6 +1,6 @@
 # 🕹️ Metasploitable2
 
-# 👉This report will be assessed according to its accuracy and comprehensiveness regarding every aspect of the test. Its goal is to confirm that the applicant possesses the technical know-how and understanding of penetration testing methodologies necessary to meet the requirements.
+#👉This report will be assessed according to its accuracy and comprehensiveness regarding every aspect of the test. Its goal is to confirm that the applicant possesses the technical know-how and understanding of penetration testing methodologies necessary to meet the requirements.
 
 
  # 📌Introduction:
