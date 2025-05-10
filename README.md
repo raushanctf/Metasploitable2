@@ -52,10 +52,10 @@
 
 
 # 🎯 { Service Enumeration }
-  * Testing Objective: Risk Rating
-  * Service Enumeration: Low / Medium / High
-  * Tools Used: Nmap
-  * Vulnerability: Service Enumeration via Open Ports
+  *  Testing Objective: Risk Rating
+  *  Service Enumeration: Low / Medium / High
+  *  Tools Used: Nmap
+  *  Vulnerability: Service Enumeration via Open Ports
 
   * Vulnerability Description:
     Service enumeration is a method used to identify the services running on specific ports of a target 
