@@ -1,16 +1,16 @@
-# Metasploitable2
+🕹️# Metasploitable2
 
-This report will be assessed according to its accuracy and comprehensiveness regarding every face of the test. This report's goal is to confirm that the applicant possesses the technical know-how and through understanding of penetration testing methodologies necessary to meet the requirements.
+This report will be assessed according to its accuracy and comprehensiveness regarding every aspect of the test. Its goal is to confirm that the applicant possesses the technical know-how and understanding of penetration testing methodologies necessary to meet the requirements.
 
 
 # Introduction:
   This report will be assessed for its accuracy and completeness across all aspects of the test. Its 
-  objective is to verify that the applicant has the technical expertise and comprehensive 
-  understanding of penetration testing methodologies required to meet the specified criteria.
+  The objective is to verify that the applicant has the technical expertise and comprehensive 
+  An understanding of penetration testing methodologies is required to meet the specified criteria.
 
 # Objective: 
-  The objective of this assessment is to perform an internal network penetration test on the 
-  specified Personal network. The task requires following a comprehensive and systematic approach 
+  This assessment aims to perform an internal network penetration test on the 
+  specified Personal network. The task requires a comprehensive and systematic approach 
   to achieve the desired outcomes. This test aims to simulate a real-world penetration test within the 
   provided testing environment. Additionally, it demonstrates the candidate’s approach from start to 
   finish, including the identification and exploitation of vulnerabilities, as well as the creation of a 
@@ -33,7 +33,7 @@ This report will be assessed according to its accuracy and comprehensiveness reg
   Project Name: Metasploitable2
 
   Description: Metasploitable2 is a deliberately vulnerable virtual machine (VM) 
-  designed for penetration testing training and security research. It is 
+  designed for penetration testing, training, and security research. It is 
   widely utilized by cybersecurity professionals, students, and enthusiasts 
   to simulate real-world attack scenarios within a controlled environment.
   
@@ -42,8 +42,8 @@ This report will be assessed according to its accuracy and comprehensiveness reg
   Test Scope: Black Box Penetration Test
 
 # Summary
-  Outlined is a Black Box Application Security assessment for the metasploitable2.
-  Finding Finding ID Severity
+  Outlined is a Black Box Application Security assessment for the Metasploitable2.
+  Finding ID Severity
   Service Enumeration via Open Ports:  Medium
   Credential Exposure Through Telnet Banner Disclosure: HIGH
   Exploiting FTP (Anonymous Access):  HIGH
@@ -81,8 +81,8 @@ This report will be assessed according to its accuracy and comprehensiveness reg
   
   * References: https://hackerone.com/reports/2210038
   
-  # Step of Reproduce 
-  * let's begin first Running the command in the terminal: nmap -sV 192.168.219.132
+  # Step to Reproduce 
+  * Let's begin first running the command in the terminal: nmap -sV 192.168.219.132
      
   ![service enumeration](https://github.com/user-attachments/assets/698edfcc-257a-48af-87b7-abdba489ce92)
 
