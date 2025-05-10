@@ -52,10 +52,10 @@
 
 
 # 🎯 { Service Enumeration }
-  *  Testing Objective: Risk Rating
-  *  Service Enumeration: Low / Medium / High
-  *  Tools Used: Nmap
-  *  Vulnerability: Service Enumeration via Open Ports
+  * Testing Objective: Risk Rating
+  * Service Enumeration: Low / Medium / High
+  * Tools Used: Nmap
+    Vulnerability: Service Enumeration via Open Ports
 
   * Vulnerability Description:
     Service enumeration is a method used to identify the services running on specific ports of a target 
@@ -82,7 +82,7 @@
   * References: https://hackerone.com/reports/2210038
   
   # 🎉Step to Reproduce 
-  * Let's begin first running the command in the terminal: nmap -sV 192.168.219.132
+👉 Let's begin first running the command in the terminal: nmap -sV 192.168.219.132
      
   ![service enumeration](https://github.com/user-attachments/assets/698edfcc-257a-48af-87b7-abdba489ce92)
 
@@ -114,7 +114,7 @@
   * Monitor Logs & Traffic for suspicious login attempts.
   
 # 🎉Step to Reproduce 
-  * Let's begin. First, run the command in the terminal: telnet <target_ip>
+  👉Let's begin. First, run the command in the terminal: telnet <target_ip>
   ![credential Exposure](https://github.com/user-attachments/assets/067b526a-3ec4-4a5d-9c98-2f472e94cf90)
 
   ![credential exposure1](https://github.com/user-attachments/assets/e67f343d-4f01-4d41-ad16-e89ec0fa1e15)
