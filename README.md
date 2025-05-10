@@ -1,14 +1,14 @@
-🕹️# Metasploitable2
+🕹️ Metasploitable2
 
-This report will be assessed according to its accuracy and comprehensiveness regarding every aspect of the test. Its goal is to confirm that the applicant possesses the technical know-how and understanding of penetration testing methodologies necessary to meet the requirements.
+👉This report will be assessed according to its accuracy and comprehensiveness regarding every aspect of the test. Its goal is to confirm that the applicant possesses the technical know-how and understanding of penetration testing methodologies necessary to meet the requirements.
 
 
-# Introduction:
+ 📌Introduction:
   This report will be assessed for its accuracy and completeness across all aspects of the test. Its 
   The objective is to verify that the applicant has the technical expertise and comprehensive 
   An understanding of penetration testing methodologies is required to meet the specified criteria.
 
-# Objective: 
+🎯 Objective: 
   This assessment aims to perform an internal network penetration test on the 
   specified Personal network. The task requires a comprehensive and systematic approach 
   to achieve the desired outcomes. This test aims to simulate a real-world penetration test within the 
